@@ -24,11 +24,11 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) =>
             BlocProvider(
               create: (BuildContext) =>CharactersCubit(charactersRepoistry),
-              child: CharactersScreen(),
+              child: const CharactersScreen(),
 
         ));
     case characterDetailsScreen :
-    return MaterialPageRoute(builder:(_) => CharacterDetailsScreen());
+    return MaterialPageRoute(builder:(_) => const CharacterDetailsScreen());
     }
     return null;
     }

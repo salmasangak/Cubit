@@ -1,11 +1,11 @@
 part of 'cubit_cubit.dart';
 
-@immutable
-abstract class State {}
 
-class Initial extends State {}
+abstract class CharactersState {}
 
-class CharactersLoaded extends State{
+class Initial extends CharactersState {}
+
+class CharactersLoaded extends CharactersState{
   final List< Character > characters;
   CharactersLoaded(this.characters);
 }
